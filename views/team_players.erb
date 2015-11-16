@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <h1><%=@team%></h1>
+
+    <ul>
+      <% @team_name.players.each do |player| %>
+        <li><%= player.position%> : <%=player.name%></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
